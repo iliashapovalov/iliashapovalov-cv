@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Системный и сетевой администратор</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="about.html" class="logo">CV<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contacts.html" class="active">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="section-title">Контакты</h2>
+
+    <div class="contacts-wrapper">
+      <div>
+        <div class="contact-info">
+          <h3>Свяжитесь со мной</h3>
+          <p>Открыт к предложениям о работе и сотрудничеству. Пишите на email или в Telegram — отвечаю оперативно.</p>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">✉️</div>
+          <div>
+            <div class="label">Email</div>
+            <div class="value">iliashapovalov53@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">📍</div>
+          <div>
+            <div class="label">Location</div>
+            <div class="value">Минск, Беларусь</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">📱</div>
+          <div>
+            <div class="label">Phone</div>
+            <div class="value">+375 (29) 509-86-89</div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <h3>Социальные сети</h3>
+          <div class="social-grid">
+            <a href="https://t.me/ilik_1">Telegram</a>
+            <a href="mailto:iliashapovalov53@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <h3>Напишите мне</h3>
+        <div class="form-group">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" placeholder="Ваше сообщение..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Отправить</button>
+        <div id="form-status" class="form-status"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Илья Шаповалов. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contacts.js"></script>
+</body>
+</html>

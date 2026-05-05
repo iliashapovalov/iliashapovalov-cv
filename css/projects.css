@@ -1,0 +1,99 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+  border-color: var(--accent-dim);
+}
+
+.project-card .preview {
+  height: 180px;
+  background: linear-gradient(135deg, var(--accent-dim), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.project-card .preview.accent2 {
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+}
+
+.project-card .preview.accent3 {
+  background: linear-gradient(135deg, #059669, #10b981);
+}
+
+.project-card .preview.accent4 {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+.project-card .preview.accent5 {
+  background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+}
+
+.project-card .preview.accent6 {
+  background: linear-gradient(135deg, #0891b2, #06b6d4);
+}
+
+.project-card .body {
+  padding: 1.5rem;
+}
+
+.project-card .body h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.project-card .body p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.project-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-card .tags span {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.project-card .links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-card .links a {
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-card .links a:hover {
+  text-decoration: underline;
+}
